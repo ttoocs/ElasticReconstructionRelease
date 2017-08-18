@@ -1,0 +1,12 @@
+[submodule "pcl"]
+  path = pcl
+  url = git@github.com:ttoocs/pcl.git
+[submodule "ElasticReconstruction"]
+	path = ElasticReconstruction
+	url = git@github.com:ttoocs/ElasticReconstruction.git
+[submodule "OpenNi-Stuff"]
+	path = OpenNi-Stuff
+	url = git@github.com:ttoocs/OpenNi-Stuff.git
+[submodule "SeperateKinfu"]
+	path = SeperateKinfu
+	url = git@github.com:ttoocs/SeperateKinfu.git
