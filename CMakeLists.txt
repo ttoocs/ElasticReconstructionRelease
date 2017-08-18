@@ -12,7 +12,8 @@ project(ONI_STUFF)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_SOURCE_DIR}/bin)
 
 #Setup seperate kinfu
-#execute_process ( COMMAND sh ${CMAKE_CURRENT_SOURCE_DIR}/SeperateKinfu/symlink.sh ../pcl )
+execute_process ( COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/SeperateKinfu/symlink.sh ../pcl )
+
 #Build it
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/SeperateKinfu)
 
