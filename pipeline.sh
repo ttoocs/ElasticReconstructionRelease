@@ -212,7 +212,7 @@ MESH(){
   fi
 
   #pcl_kinfu_largeScale_mesh_output $INFILE --volume_size 4
-  KinfuLs_meshOut $INFILE --volume_size 4 
+  KinfuLS_meshOut $INFILE --volume_size 4 
  
   #String for meshlab inputs
   MESHES=""
