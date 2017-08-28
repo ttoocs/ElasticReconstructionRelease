@@ -11,6 +11,18 @@ add_definitions(
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY  ${CMAKE_SOURCE_DIR}/bin)
 
+#Git init/updates
+macro(gitInit)
+  execute_process ( COMMAND git submodule init ${CMAKE_CURRENT_SOURCE_DIR}/${argv} )
+  execute_process ( COMMAND git submodule update ${CMAKE_CURRENT_SOURCE_DIR}/${argv} )
+endmacro()
+
+gitInit( SeperateKinfu )
+gitInit( OpenNi-Stuff )
+gitInit( ElasticReconstruction )
+gitInit( pcl )
+
+
 #Setup seperate kinfu
 execute_process ( COMMAND bash ${CMAKE_CURRENT_SOURCE_DIR}/SeperateKinfu/symlink.sh ../pcl )
 
