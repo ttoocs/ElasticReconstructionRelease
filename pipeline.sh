@@ -48,7 +48,8 @@ CDDIR(){
 #  if [ $WORKDIR != "" ]; then
 #    cd $WORKDIR
 #  else
-    echo "DIR NOT SET, CANNOT CD."
+#    echo "DIR NOT SET, CANNOT CD."
+    echo ""
 #  fi
 
 }
